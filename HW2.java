@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-
 /*
  * ID: TODO: B0544115
  * Name: TODO:¬x¤l®x
@@ -80,10 +79,10 @@ class Deck {
 		// Card card=new Card(1,1); ->means new card as clubs ace
 		// cards.add(card);
 		// Sample code end
-		for (int i = 1; i <= nDeck; i++) {
-			for (int x = 1; x <= 4; x++) {
-				for (int y = 1; y <= 13; y++) {
-					Card card = new Card(x, y);
+		for (int a = 1; a <= nDeck; a++) {
+			for (int b = 1; b <= 4; b++) {
+				for (int c = 1; c <= 13; c++) {
+					Card card = new Card(b, c);
 					cards.add(card);
 				}
 			}
@@ -100,12 +99,10 @@ for(int i = 0;i < cards.size();i++){
 	cards.get(i).printCard();
 }
 	}
-
 	public ArrayList<Card> getAllCards() {
 		return cards;
 	}
 }
-
 /*
  * Description: TODO: please add description here
  */
@@ -146,9 +143,7 @@ class Card {
 				System.out.println("Spades "+"Ace");
 			else
 				System.out.println("Spades "+rank);
-		}
-		
-			
+		}		
 	}
 
 	public int getSuit() {
